@@ -1,0 +1,68 @@
+:root {
+  --green: #1b5e20;
+  --light-green: #2e7d32;
+  --gold: #d4af37;
+}
+
+body {
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar-brand img {
+  border: 2px solid var(--gold);
+  background-color: white;
+}
+
+.navbar-nav .dropdown-menu {
+  background-color: var(--green);
+  border: none;
+}
+
+.navbar-nav .dropdown-item {
+  color: white;
+  transition: 0.2s;
+}
+
+.navbar-nav .dropdown-item:hover {
+  background-color: var(--light-green);
+}
+
+.bg-green {
+  background-color: var(--green) !important;
+}
+
+.text-green {
+  color: var(--green);
+}
+
+.text-shadow {
+  text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+.card {
+  transition: 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.section-fade {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s ease;
+}
+.section-fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in {
+  animation: fadeIn 1.2s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(30px);}
+  to {opacity: 1; transform: translateY(0);}
+}

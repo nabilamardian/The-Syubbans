@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Syubbans | Remaja Masjid</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome untuk ikon -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-green fixed-top shadow-sm">
+  <div class="container">
+    <!-- Logo + Brand -->
+    <a class="navbar-brand d-flex align-items-center fw-bold" href="#home">
+      <img src="img/logo.png" alt="Logo The Syubbans" width="35" height="35" class="me-2 rounded-circle">
+      The Syubbans
+    </a>
+
+    <!-- Toggle button (mobile) -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
+
+        <!-- Dropdown: Kegiatan -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#program" id="kegiatanDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Kegiatan
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#program">Program</a></li>
+            <li><a class="dropdown-item" href="#galeri">Galeri</a></li>
+            <li><a class="dropdown-item" href="#agenda">Agenda</a></li>
+            <li><a class="dropdown-item" href="#kajian">Kajian</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Home -->
+<section id="home" class="vh-100 d-flex align-items-center text-center text-light bg-cover" style="background-image:url('img/cover.jpg');">
+  <div class="container fade-in">
+    <h1 class="display-4 fw-bold text-shadow">Selamat Datang di The Syubbans</h1>
+    <p class="lead text-shadow">Bersatu dalam iman, berkreasi dalam kebaikan</p>
+    <a href="#about" class="btn btn-light mt-3 shadow">Kenal Lebih Dekat</a>
+  </div>
+</section>
+
+<!-- Tentang Kami -->
+<section id="about" class="py-5 section-fade">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4 text-green">Tentang Kami</h2>
+    <p class="mx-auto" style="max-width:700px;">
+      The Syubbans adalah organisasi remaja masjid yang berfokus pada kegiatan keislaman, sosial, dan kreatif. 
+      Kami hadir sebagai wadah bagi generasi muda untuk memperkuat iman, menebar manfaat, serta berkarya dengan semangat kebersamaan.
+    </p>
+  </div>
+</section>
+
+<!-- Kegiatan & Program -->
+<section id="program" class="py-5 bg-light section-fade">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4 text-green">Kegiatan & Program</h2>
+    <div class="row g-4">
+      <div class="col-md-4"><div class="card p-3 border-0 shadow-sm"><h5><i class="fa-solid fa-book-quran text-green"></i> Kajian Rutin</h5><p>Kegiatan keagamaan mingguan di masjid.</p></div></div>
+      <div class="col-md-4"><div class="card p-3 border-0 shadow-sm"><h5><i class="fa-solid fa-hand-holding-heart text-green"></i> Sosial & Donasi</h5><p>Program berbagi untuk masyarakat sekitar.</p></div></div>
+      <div class="col-md-4"><div class="card p-3 border-0 shadow-sm"><h5><i class="fa-solid fa-palette text-green"></i> Kreatif & Media</h5><p>Pembuatan konten dan desain dakwah digital.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Galeri -->
+<section id="galeri" class="py-5 section-fade">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4 text-green">Galeri Kegiatan</h2>
+    <div class="row g-3">
+      <div class="col-md-4"><img src="img/galeri1.jpg" class="img-fluid rounded shadow-sm" alt=""></div>
+      <div class="col-md-4"><img src="img/galeri2.jpg" class="img-fluid rounded shadow-sm" alt=""></div>
+      <div class="col-md-4"><img src="img/galeri3.jpg" class="img-fluid rounded shadow-sm" alt=""></div>
+    </div>
+  </div>
+</section>
+
+<!-- Agenda -->
+<section id="agenda" class="py-5 bg-light section-fade">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4 text-green">Agenda Kegiatan</h2>
+    <ul class="list-group mx-auto shadow-sm" style="max-width:500px;">
+      <li class="list-group-item">📅 Kajian Akbar – 25 November 2025</li>
+      <li class="list-group-item">🤝 Bakti Sosial – 10 Desember 2025</li>
+      <li class="list-group-item">🎨 Workshop Kreatif – 20 Januari 2026</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Kajian -->
+<section id="kajian" class="py-5 text-center section-fade">
+  <div class="container">
+    <h2 class="fw-bold mb-4 text-green">Video Kajian</h2>
+    <div class="ratio ratio-16x9 mx-auto" style="max-width:700px;">
+      <iframe src="https://www.youtube.com/embed/yourvideoid" title="Kajian The Syubbans" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- Kontak -->
+<section id="kontak" class="py-5 bg-green text-light text-center fade-in">
+  <div class="container">
+    <h2 class="fw-bold mb-3">Kontak Kami</h2>
+    <p>Hubungi kami untuk bergabung atau kolaborasi kegiatan</p>
+    <p><i class="fa-brands fa-whatsapp"></i> 0812-xxxx-xxxx | <i class="fa-solid fa-envelope"></i> thesyubbans@gmail.com</p>
+    <div>
+      <a href="#" class="btn btn-outline-light btn-sm m-1"><i class="fa-brands fa-instagram"></i> Instagram</a>
+      <a href="#" class="btn btn-outline-light btn-sm m-1"><i class="fa-brands fa-youtube"></i> YouTube</a>
+    </div>
+  </div>
+</section>
+
+<footer class="text-center py-3 bg-dark text-secondary">
+  <small>© 2025 The Syubbans. All Rights Reserved.</small>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
