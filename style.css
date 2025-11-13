@@ -1,17 +1,28 @@
+/* 🎨 Warna Utama The Syubbans */
 :root {
   --green: #1b5e20;
   --light-green: #2e7d32;
   --gold: #d4af37;
 }
 
+/* ⚙️ Global Style */
 body {
   scroll-behavior: smooth;
   font-family: 'Poppins', sans-serif;
+  color: #333;
 }
+
+/* ======================= */
+/* 🌿 NAVBAR STYLE */
+/* ======================= */
 
 .navbar-brand img {
   border: 2px solid var(--gold);
   background-color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
 }
 
 .navbar-nav .dropdown-menu {
@@ -39,6 +50,121 @@ body {
 .text-shadow {
   text-shadow: 0 2px 8px rgba(0,0,0,0.5);
 }
+
+/* ======================= */
+/* 🏠 HOME SECTION */
+/* ======================= */
+
+#home {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  color: white;
+  position: relative;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+#home .container {
+  position: relative;
+  z-index: 2;
+}
+
+#home h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+#home p {
+  font-size: 1.2rem;
+  margin-top: 15px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+/* Tombol di Home */
+#home .btn {
+  background-color: var(--gold);
+  border: none;
+  color: #1b1b1b;
+  font-weight: 600;
+  padding: 10px 25px;
+  border-radius: 30px;
+  transition: all 0.3s;
+}
+
+#home .btn:hover {
+  background-color: white;
+  color: var(--green);
+}
+
+/* ======================= */
+/* 💬 TENTANG KAMI SECTION */
+/* ======================= */
+
+#about {
+  background-color: #f8f9fa;
+  color: #333;
+  text-align: center;
+}
+
+#about h2 {
+  font-weight: 700;
+  color: var(--green);
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* Visi & Misi */
+.visi-misi {
+  text-align: left;
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+  margin-top: 30px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.visi-misi h4 {
+  color: var(--green);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.visi-misi ul {
+  padding-left: 20px;
+}
+
+.visi-misi li {
+  margin-bottom: 8px;
+}
+
+/* Slogan */
+.slogan {
+  font-style: italic;
+  font-weight: 500;
+  margin-top: 25px;
+  color: var(--light-green);
+}
+
+/* ======================= */
+/* ✨ CARD, ANIMASI, & LAINNYA */
+/* ======================= */
 
 .card {
   transition: 0.3s;
