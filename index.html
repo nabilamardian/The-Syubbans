@@ -20,7 +20,7 @@
   <div class="container">
     <!-- Logo + Brand -->
     <a class="navbar-brand d-flex align-items-center fw-bold" href="#home">
-      <img src="img/logo.png" alt="Logo The Syubbans" width="35" height="35" class="me-2 rounded-circle">
+      <img src="img/logo.png" alt="Logo The Syubbans" class="me-2 logo-syubbans">
       The Syubbans
     </a>
 
@@ -115,10 +115,161 @@ style="min-height:100vh; background: linear-gradient(rgba(0, 40, 0, 0.6), rgba(0
 <section id="program" class="py-5 bg-light section-fade">
   <div class="container text-center">
     <h2 class="fw-bold mb-4 text-green">Kegiatan & Program</h2>
+
     <div class="row g-4">
-      <div class="col-md-4"><div class="card p-3 border-0 shadow-sm"><h5><i class="fa-solid fa-book-quran text-green"></i> Kajian Rutin</h5><p>Kegiatan keagamaan mingguan di masjid.</p></div></div>
-      <div class="col-md-4"><div class="card p-3 border-0 shadow-sm"><h5><i class="fa-solid fa-hand-holding-heart text-green"></i> Sosial & Donasi</h5><p>Program berbagi untuk masyarakat sekitar.</p></div></div>
-      <div class="col-md-4"><div class="card p-3 border-0 shadow-sm"><h5><i class="fa-solid fa-palette text-green"></i> Kreatif & Media</h5><p>Pembuatan konten dan desain dakwah digital.</p></div></div>
+
+      <!-- Program Ramadhan -->
+<div class="col-md-12">
+  <div class="program-card">
+    <img src="img/program/ramadhan.jpg" class="program-img" alt="Program Ramadhan">
+    <div class="program-body">
+      <h4 class="fw-bold text-green mb-2">Program Ramadhan</h4>
+      <p>Serangkaian kegiatan khusus Ramadhan yang diikuti oleh anak-anak hingga remaja.</p>
+
+      <!-- Accordion -->
+      <div class="accordion mt-3" id="ramadhanAccordion">
+
+        <div class="accordion-item border-0">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-white text-green fw-semibold" 
+                    type="button" data-bs-toggle="collapse"
+                    data-bs-target="#ramadhanList">
+              Lihat Daftar Kegiatan Ramadhan
+            </button>
+          </h2>
+
+          <div id="ramadhanList" class="accordion-collapse collapse">
+            <div class="accordion-body">
+
+              <!-- ================= SLIDER / CAROUSEL ================= -->
+              <div id="ramadhanCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+
+                <div class="carousel-inner rounded-4 shadow-sm">
+
+                  <div class="carousel-item active">
+                    <img src="img/ramadhan/ramadhan1.jpg" class="d-block w-100" alt="Kegiatan Ramadhan 1">
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="img/ramadhan/ramadhan2.jpg" class="d-block w-100" alt="Kegiatan Ramadhan 2">
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="img/ramadhan/ramadhan3.jpg" class="d-block w-100" alt="Kegiatan Ramadhan 3">
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="img/ramadhan/ramadhan4.jpg" class="d-block w-100" alt="Kegiatan Ramadhan 3">
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="img/ramadhan/ramadhan5.jpg" class="d-block w-100" alt="Kegiatan Ramadhan 3">
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="img/ramadhan/ramadhan6.jpg" class="d-block w-100" alt="Kegiatan Ramadhan 3">
+                  </div>
+
+                </div>
+
+                <!-- Control -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#ramadhanCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#ramadhanCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </button>
+
+              </div>
+              <!-- =============== END SLIDER =============== -->
+
+              <!-- =============== SUB CARD GRID =============== -->
+              <div class="row g-3 mt-1">
+
+                <div class="col-md-4">
+                  <div class="subcard"><h6 class="text-green fw-bold">Pawai Menyambut Ramadhan</h6></div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="subcard"><h6 class="text-green fw-bold">Tarawih Anak</h6></div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="subcard"><h6 class="text-green fw-bold">Festival Ramadhan</h6></div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="subcard"><h6 class="text-green fw-bold">Itikaf & Sahur</h6></div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="subcard"><h6 class="text-green fw-bold">Takjil On The Road</h6></div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="subcard"><h6 class="text-green fw-bold">Pawai Penutupan Ramadhan</h6></div>
+                </div>
+
+              </div>
+              <!-- =============== END SUBCARD GRID =============== -->
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- End Accordion -->
+
+    </div>
+  </div>
+</div>
+
+
+
+      <!-- Idul Adha -->
+      <div class="col-md-4">
+        <div class="program-card">
+          <img src="img/program/idul-adha.jpg" class="program-img" alt="Idul Adha">
+          <div class="program-body">
+            <h5 class="fw-bold text-green">Idul Adha</h5>
+            <p>Kegiatan penyembelihan, edukasi hewan qurban, dan pembagian daging.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kajian Bulanan -->
+      <div class="col-md-4">
+        <div class="program-card">
+          <img src="img/program/kajian.jpg" class="program-img" alt="Kajian Bulanan">
+          <div class="program-body">
+            <h5 class="fw-bold text-green">Kajian Bulanan</h5>
+            <p>Kajian rutin bersama ustadz pembina di masjid.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Belajar Bersama Anak-anak -->
+      <div class="col-md-4">
+        <div class="program-card">
+          <img src="img/program/belajar.jpg" class="program-img" alt="Belajar Bersama">
+          <div class="program-body">
+            <h5 class="fw-bold text-green">Belajar Bersama</h5>
+            <p>Membimbing adik-adik mengaji, belajar, dan aktivitas positif lainnya.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Olahraga -->
+      <div class="col-md-4">
+        <div class="program-card">
+          <img src="img/program/olahraga.jpg" class="program-img" alt="Olahraga">
+          <div class="program-body">
+            <h5 class="fw-bold text-green">Olahraga</h5>
+            <p>Kegiatan olahraga rutin untuk menjaga kebugaran dan kekompakan.</p>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>

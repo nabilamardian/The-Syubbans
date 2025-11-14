@@ -16,13 +16,18 @@ body {
 /* 🌿 NAVBAR STYLE */
 /* ======================= */
 
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .navbar-brand img {
-  border: 2px solid var(--gold);
-  background-color: white;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  margin-right: 8px;
+  height: 50px;
+  width: auto;
+  border: 0;
+  background: transparent;
+  object-fit: contain;
 }
 
 .navbar-nav .dropdown-menu {
@@ -50,6 +55,15 @@ body {
 .text-shadow {
   text-shadow: 0 2px 8px rgba(0,0,0,0.5);
 }
+
+.logo-syubbans {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 0 !important;   /* Hapus efek bulat */
+  background: none !important;   /* Tidak ada background hitam/putih */
+}
+
 
 /* ======================= */
 /* 🏠 HOME SECTION */
@@ -192,3 +206,79 @@ body {
   from {opacity: 0; transform: translateY(30px);}
   to {opacity: 1; transform: translateY(0);}
 }
+
+/* === PROGRAM CARD STYLE === */
+
+.program-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: 0.35s ease;
+}
+
+.program-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+}
+
+.program-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 3px solid var(--green);
+}
+
+.program-body {
+  padding: 15px;
+}
+
+.program-body h5 {
+  margin-bottom: 6px;
+}
+
+.program-body p {
+  margin: 0;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.accordion-button {
+  box-shadow: none !important;
+  border: none;
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--green);
+  background-color: #eef6f0;
+}
+
+.list-ramadhan {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.list-ramadhan li {
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+
+.subcard {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  border: 1px solid #e5e5e5;
+  transition: 0.2s ease;
+}
+
+.subcard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+.carousel-inner img {
+  max-height: 350px;
+  object-fit: cover;
+}
+
