@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Syubbans | Remaja Masjid</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome untuk ikon -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-green fixed-top shadow-sm">
+  <div class="container">
+    <!-- Logo + Brand -->
+    <a class="navbar-brand d-flex align-items-center fw-bold" href="#home">
+      <img src="img/syubbans-log.png" alt="Logo The Syubbans" class="me-2 logo-syubbans">
+      The Syubbans
+    </a>
+
+    <!-- Toggle button (mobile) -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
+
+        <!-- Dropdown: Kegiatan -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#program" id="kegiatanDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Kegiatan
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#program">Program</a></li>
+            <li><a class="dropdown-item" href="#galeri">Galeri</a></li>
+            <li><a class="dropdown-item" href="#agenda">Agenda</a></li>
+            <li><a class="dropdown-item" href="#kajian">Kajian</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Home -->
+<section id="home" class="d-flex align-items-center justify-content-center text-center text-light" 
+style="min-height:100vh; background: linear-gradient(rgba(0, 40, 0, 0.6), rgba(0, 40, 0, 0.6)), url('img/bg-home.jpg') center/cover no-repeat;">
+  <div class="container">
+    <h1 class="fw-bold display-5 mb-3">Selamat Datang di <span class="text-gold">The Syubbans!</span></h1>
+    <p class="lead mb-4">Tempatnya anak muda bertumbuh bareng dalam iman, karya, dan persaudaraan.</p>
+    <p class="mb-5">Kami percaya, jadi remaja masjid itu bukan cuma soal ibadah, tapi juga soal aksi, kreativitas, dan inspirasi.</p>
+    <a href="#about" class="btn btn-light text-green fw-semibold px-4 py-2 rounded-pill shadow-sm">
+      Kenali Lebih Dekat <i class="fa-solid fa-arrow-down ms-2"></i>
+    </a>
+  </div>
+</section>
+
+<!-- Tentang Kami -->
+<section id="about" class="py-5 section-fade bg-light">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4 text-green">Tentang Kami</h2>
+    <p class="mx-auto mb-4" style="max-width: 800px;">
+      <strong>The Syubbans</strong> adalah organisasi remaja masjid yang lahir dari semangat muda untuk terus tumbuh dalam kebaikan, berkarya, dan berkontribusi. 
+      Kami hadir sebagai ruang kreatif dan spiritual bagi generasi muda yang ingin menyeimbangkan antara dunia dan akhirat — dengan gaya yang tetap asik, positif, dan bermakna.
+    </p>
+    <p class="mx-auto mb-4" style="max-width: 800px;">
+      Berawal dari kegiatan kecil di lingkungan <strong>Masjid At-Taqwa</strong>, kini The Syubbans berkembang menjadi wadah aktif dalam berbagai kegiatan keislaman, sosial, hingga kreativitas digital.
+      Melalui kajian, aksi sosial, dan proyek kreatif seperti media dakwah dan konten positif, kami ingin menunjukkan bahwa menjadi remaja masjid itu keren dan relevan di zaman sekarang.
+    </p>
+    <blockquote class="fst-italic text-green fw-semibold mt-4 mb-5">
+      “Kami percaya, perubahan besar dimulai dari langkah kecil — dan langkah itu bisa dimulai dari masjid.”
+    </blockquote>
+
+    <!-- Visi & Misi -->
+    <div class="text-start mx-auto" style="max-width: 800px;">
+      <h3 class="fw-bold text-green mb-3 text-center">Visi & Misi</h3>
+
+      <h5 class="fw-bold text-green mt-4">Visi</h5>
+      <p>Membentuk generasi muda yang kreatif, intelektual, bersolidaritas tinggi, berakhlak mulia dan bertakwa serta melahirkan pemimpin muda berbasis masjid dalam bingkai persatuan umat.</p>
+
+      <h5 class="fw-bold text-green mt-4">Misi</h5>
+      <ol>
+        <li>Menjadikan Masjid sebagai pusat kegiatan dakwah, ibadah, ta’lim, dan pelayanan jama’ah.</li>
+        <li>Mewujudkan amal agama dalam diri, keluarga, dan masyarakat dalam naungan ridho Allah.</li>
+        <li>Membina pemuda Masjid At-Taqwa agar beriman dan bertakwa secara berkesinambungan.</li>
+        <li>Mengembalikan fungsi masjid sebagai sentral kegiatan umat.</li>
+        <li>Membina pemuda agar memahami dan mengamalkan ajaran Islam dalam kehidupan sehari-hari.</li>
+        <li>Memupuk ukhuwah Islamiyah dan semangat pengabdian kepada masyarakat.</li>
+        <li>Melahirkan kader muda kreatif, mandiri, dan berkarakter pemimpin berbasis masjid.</li>
+      </ol>
+
+      <!-- Slogan -->
+      <div class="mt-5 text-center">
+        <h5 class="fw-bold text-green mb-2">Slogan</h5>
+        <p class="fst-italic">“Khoirun naasi ahsanuhum khulukon wa anfa'ahum linnaas”</p>
+        <small>(Sebaik-baik manusia adalah yang terbaik budi pekertinya dan yang paling bermanfaat bagi manusia lainnya)</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Kegiatan & Program -->
+<section id="program" class="py-5 bg-light section-fade">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4 text-green">Kegiatan & Program</h2>
+    <div class="row g-4">
+
+      <!-- Program Ramadhan -->
+<div class="col-md-12">
+  <div class="program-card">
+    <img src="img/program/ramadhan.jpg" class="program-img" alt="Program Ramadhan">
+    <div class="program-body">
+      <h4 class="fw-bold text-green mb-2">Program Ramadhan</h4>
+      <p>Serangkaian kegiatan khusus Ramadhan yang diikuti oleh anak-anak hingga remaja.</p>
+
+      <!-- Accordion -->
+      <div class="accordion mt-3" id="ramadhanAccordion">
+
+        <div class="accordion-item border-0">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-white text-green fw-semibold" 
+                    type="button" data-bs-toggle="collapse"
+                    data-bs-target="#ramadhanList">
+              Lihat Daftar Kegiatan Ramadhan
+            </button>
+          </h2>
+
+          <div id="ramadhanList" class="accordion-collapse collapse">
+            <div class="accordion-body">
+
+              <!-- ================= SLIDER / CAROUSEL ================= -->
+              <div id="ramadhanCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+
+                <div class="carousel-inner rounded-4 shadow-sm">
+
+                  <div class="carousel-item active">
+                    <img src="img/ramadhan/ramadhan1.jpg" class="d-block w-100" alt="Kegiatan Ramadhan 1">
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="img/ramadhan/ramadhan2.jpg" class="d-block w-100" alt="Kegiatan Ramadhan 2">
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="img/ramadhan/ramadhan3.jpg" class="d-block w-100" alt="Kegiatan Ramadhan 3">
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="img/ramadhan/ramadhan4.jpg" class="d-block w-100" alt="Kegiatan Ramadhan 3">
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="img/ramadhan/ramadhan5.jpg" class="d-block w-100" alt="Kegiatan Ramadhan 3">
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="img/ramadhan/ramadhan6.jpg" class="d-block w-100" alt="Kegiatan Ramadhan 3">
+                  </div>
+
+                </div>
+
+                <!-- Control -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#ramadhanCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#ramadhanCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </button>
+
+              </div>
+              <!-- =============== END SLIDER =============== -->
+
+              <!-- =============== SUB CARD GRID =============== -->
+              <div class="row g-3 mt-1">
+
+                <div class="col-md-4">
+                  <div class="subcard"><h6 class="text-green fw-bold">Pawai Menyambut Ramadhan</h6></div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="subcard"><h6 class="text-green fw-bold">Tarawih Anak</h6></div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="subcard"><h6 class="text-green fw-bold">Festival Ramadhan</h6></div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="subcard"><h6 class="text-green fw-bold">Itikaf & Sahur</h6></div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="subcard"><h6 class="text-green fw-bold">Takjil On The Road</h6></div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="subcard"><h6 class="text-green fw-bold">Pawai Penutupan Ramadhan</h6></div>
+                </div>
+
+              </div>
+              <!-- =============== END SUBCARD GRID =============== -->
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- End Accordion -->
+
+    </div>
+  </div>
+</div>
+
+
+
+      <!-- Idul Adha -->
+      <div class="col-md-4">
+        <div class="program-card">
+          <img src="img/program/idul-adha2.jpg" class="program-img" alt="Idul Adha">
+          <div class="program-body">
+            <h5 class="fw-bold text-green">Idul Adha</h5>
+            <p>Kegiatan penyembelihan, edukasi hewan qurban, dan pembagian daging.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kajian Bulanan -->
+      <div class="col-md-4">
+        <div class="program-card">
+          <img src="img/program/kajian.jpg" class="program-img" alt="Kajian Bulanan">
+          <div class="program-body">
+            <h5 class="fw-bold text-green">Kajian Bulanan</h5>
+            <p>Kajian rutin bersama ustadz pembina di masjid dan dengan jamaah.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Belajar Bersama Anak-anak -->
+      <div class="col-md-4">
+        <div class="program-card">
+          <img src="img/program/belajar-bersama.png" class="program-img" alt="Belajar Bersama">
+          <div class="program-body">
+            <h5 class="fw-bold text-green">Belajar Bersama</h5>
+            <p>Membimbing adik-adik mengaji, belajar, dan aktivitas positif lainnya.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Olahraga -->
+      <div class="col-md-4">
+        <div class="program-card">
+          <img src="img/program/olahraga.JPG" class="program-img" alt="Olahraga">
+          <div class="program-body">
+            <h5 class="fw-bold text-green">Olahraga</h5>
+            <p>Kegiatan olahraga rutin untuk menjaga kebugaran dan kekompakan.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- DILAN -->
+      <div class="col-md-4">
+        <div class="program-card">
+          <img src="img/dilan.jpeg" class="program-img" alt="Dilan">
+          <div class="program-body">
+            <h5 class="fw-bold text-green">Diskusi Bulanan</h5>
+            <p>Kegiatan silaturahmi yang diadakan setiap bulan untuk mengevaluasi dan membahas kegiatan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bakti Sosial -->
+      <div class="col-md-4">
+        <div class="program-card">
+          <img src="img/program/DSCF7931.JPG" class="program-img" alt="Baksos">
+          <div class="program-body">
+            <h5 class="fw-bold text-green">Bakti Sosial</h5>
+            <p>Kegiatan sosial yang meliputi berbagi dan bermain bersama</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Galeri Hover -->
+<section id="galeri" class="py-5 section-fade">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4 text-green">Galeri Kegiatan</h2>
+
+    <div class="row g-4">
+
+      <!-- Item 1 -->
+      <div class="col-md-4">
+        <div class="galeri-item">
+          <img src="img/DSCF0982.JPEG" alt="">
+          <div class="galeri-layer">
+            <h3>Buka Puasa Bersama</h3>
+            <p>Kegiatan kebersamaan dan berbagi di bulan Ramadan.</p>
+            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="col-md-4">
+        <div class="galeri-item">
+          <img src="img/DSCF0420.JPEG" alt="">
+          <div class="galeri-layer">
+            <h3>Pesantren Kilat</h3>
+            <p>Pembinaan karakter spiritual untuk para remaja.</p>
+            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="col-md-4">
+        <div class="galeri-item">
+          <img src="img/DSCF0413.JPEG" alt="">
+          <div class="galeri-layer">
+            <h3>Kajian Malam</h3>
+            <p>Kajian rutin dengan pemateri pilihan.</p>
+            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="col-md-4">
+        <div class="galeri-item">
+          <img src="img/e77eea9f-5dc6-43b6-825a-1cc8f6125239.JPG" alt="">
+          <div class="galeri-layer">
+            <h3>Bakti Sosial</h3>
+            <p>Kegiatan sosial membantu masyarakat sekitar.</p>
+            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 5 -->
+      <div class="col-md-4">
+        <div class="galeri-item">
+          <img src="img/DSCF7236.JPEG" alt="">
+          <div class="galeri-layer">
+            <h3>Rohis Gathering</h3>
+            <p>Pererat ukhuwah dan membangun solidaritas.</p>
+            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 6 -->
+      <div class="col-md-4">
+        <div class="galeri-item">
+          <img src="img/4b0c8856-a1fc-4d7c-a557-e891bc149c69.jpg" alt="">
+          <div class="galeri-layer">
+            <h3>Latihan Kepemimpinan</h3>
+            <p>Pelatihan khusus untuk kader Rohis.</p>
+            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Agenda -->
+<section id="agenda" class="py-5 section-fade bg-light">
+  <div class="container">
+    <h2 class="fw-bold mb-4 text-center text-green">Agenda Kegiatan</h2>
+
+    <div class="row g-4">
+
+      <!-- Agenda 1 -->
+      <div class="col-md-4">
+        <div class="agenda-card shadow-sm p-4 text-center">
+          <h3 class="agenda-title">Open Recruitment</h3>
+          <p class="agenda-desc">Penerimaan anggota baru The Syubbans untuk periode kepengurusan terbaru.</p>
+          <span class="agenda-tag">Sepanjang Tahun</span>
+        </div>
+      </div>
+
+      <!-- Agenda 2 -->
+      <div class="col-md-4">
+        <div class="agenda-card shadow-sm p-4 text-center">
+          <h3 class="agenda-title">Ramadhan 1447 H</h3>
+          <p class="agenda-desc">Rangkaian kegiatan Ramadhan mulai dari kajian, buka bersama, hingga pesantren kilat.</p>
+          <span class="agenda-tag">Bulan Ramadhan</span>
+        </div>
+      </div>
+
+      <!-- Agenda 3 -->
+      <div class="col-md-4">
+        <div class="agenda-card shadow-sm p-4 text-center">
+          <h3 class="agenda-title">Idul Adha 1447 H</h3>
+          <p class="agenda-desc">Pelaksanaan kurban, pendistribusian daging, dan kegiatan sosial masyarakat.</p>
+          <span class="agenda-tag">Dzulhijjah</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Video Kajian -->
+<section id="kajian" class="py-5 section-fade">
+  <div class="container">
+    <h2 class="fw-bold mb-4 text-center text-green">Video Kajian</h2>
+
+    <div class="row g-4 justify-content-center">
+
+      <!-- Video 1 -->
+      <div class="col-md-6">
+        <div class="video-wrapper shadow-sm">
+          <iframe width="100%" height="315" 
+            src="https://www.youtube.com/embed/4x0rp_g5Vj4"
+            title="YouTube video player"
+            frameborder="0"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Video 2 -->
+      <div class="col-md-6">
+        <div class="video-wrapper shadow-sm">
+          <iframe width="100%" height="315" 
+            src="https://www.youtube.com/embed/M5PRAlu5Ib8"
+            title="YouTube video player"
+            frameborder="0"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center mt-4">
+      <a href="https://www.youtube.com/@TheSyubbans/featured" target="_blank" 
+         class="btn btn-green">
+        Lihat Semua Kajian
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="footer-syubbans py-5" id="contact">
+  <div class="container">
+    <div class="row gy-4 g-3 align-items-start">
+
+      <!-- Kolom 1: Logo + Desk -->
+      <div class="col-md-3">
+        <img src="img/log-syubbans.png" alt="The Syubbans" class="footer-logo mb-3">
+        <h5 class="fw-bold text-light">The Syubbans</h5>
+        <p class="text-light small mb-3">
+          Komunitas pemuda Masjid At-Taqwa yang bergerak dalam dakwah, kreativitas, dan pengembangan diri.
+        </p>
+
+        <!-- Social media -->
+        <div class="footer-socmed">
+          <a href="https://instagram.com/the_syubbans" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://youtube.com/@TheSyubbans" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://wa.me/6281947393050" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.tiktok.com/@akunmu" class="tiktok" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+
+      <!-- Kolom 2: Menu -->
+      <div class="col-md-3">
+        <h5 class="fw-bold text-light mb-3">Menu</h5>
+        <ul class="footer-menu">
+          <li><a href="#home">Beranda</a></li>
+          <li><a href="#agenda">Agenda</a></li>
+          <li><a href="#kajian">Video Kajian</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+      </div>
+
+      <!-- Kolom 3: Kontak -->
+      <div class="col-md-3">
+        <h5 class="fw-bold text-light mb-3">Hubungi Kami</h5>
+        <p class="text-light small mb-1">WhatsApp: 0819-4739-3050</p>
+        <p class="text-light small mb-1">Email: thesyubbans@gmail.com</p>
+        <p class="text-light small mb-1">Alamat: Masjid At-Taqwa, Komplek Dosen IKIP</p>
+      </div>
+
+      <!-- Kolom 4: Maps -->
+      <div class="col-md-3">
+        <h5 class="fw-bold text-light mb-3">Lokasi</h5>
+        <div class="footer-map">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18..."
+            allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="footer-line mt-4">
+
+    <div class="text-center pt-2">
+      <small class="text-light">© 2025 The Syubbans. All Rights Reserved.</small>
+    </div>
+  </div>
+</footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
